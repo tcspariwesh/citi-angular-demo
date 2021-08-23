@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppService } from './app.service';
 
 @Component({  //decorator
   selector: 'app-root',
@@ -8,7 +9,12 @@ import { Component } from '@angular/core';
 export class AppComponent {//public 
   title = 'app1';
   firstname = 'Ram';
+
+  constructor(private appService:AppService){
+
+  }
   handleClick() {
+    this.appService.save();
     console.log(this.firstname);
   }
   delete1() {
