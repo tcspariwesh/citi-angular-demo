@@ -3,18 +3,20 @@ import { Injectable } from "@angular/core";
 
 
 @Injectable() //@Autowired
-export class AppService{
-    constructor(private http: HttpClient){
+export class AppService {
+    constructor(private http: HttpClient) {
 
     }
-    save(){
-       const promise =  this.http.post("http://localhost:3000/users", 
-        {
-            "name":"Ram"
-        } );
-        promise.subscribe(function(response){
+    save(firstName:String ) {
+        const promise = this.http.post("http://localhost:3000/users",
+            {
+                "name": firstName
+            });
+        promise.subscribe(function (response) {//success handler
             console.log(response);
-            
+        }, 
+        function(error){//error handler
+            alert(error)
         })
         console.log('service method called');
     }
