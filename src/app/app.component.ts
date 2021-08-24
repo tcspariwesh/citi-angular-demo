@@ -20,12 +20,15 @@ export class AppComponent {//public , controller
         this.users.push(response);
       },
       function (error: any) {//error handler
-        alert(error)
+        alert(error);
       });
     console.log(this.firstname);
   }
-  deleteUser(userId:number) {
-    this.appService.deleteUser(userId);
+  deleteUser(userId:number, index:number) {
+    this.appService.deleteUser(userId,
+     ( response:any) => {
+        this.users.splice(index, 1)
+      });
     console.log('deleted');
   }
 }

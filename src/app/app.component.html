@@ -2,7 +2,7 @@
 <button (click)="handleClick()" >Save</button>
 
 <ol>
-    <li *ngFor="let user of users">
-        {{user.name}}<button (click)="deleteUser(user.id)">Delete</button>
+    <li *ngFor="let user of users; let i = index">
+        {{user.name}}<button (click)="deleteUser(user.id, i)">Delete</button>
     </li>
 </ol>

@@ -7,11 +7,11 @@ export class AppService {
     constructor(private http: HttpClient) {
 
     }
-    deleteUser(userId:number){
+    deleteUser(userId: number, success: any) {
         const promise = this.http.delete(
-            "http://localhost:3000/users/"+userId
+            "http://localhost:3000/users/" + userId
         );
-        promise.subscribe();
+        promise.subscribe(success);
     }
     save(firstName: String, success: any, error: any) {
         const promise = this.http.post("http://localhost:3000/users",
