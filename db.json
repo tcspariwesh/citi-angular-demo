@@ -1,80 +1,34 @@
 {
   "users": [
     {
-      "name": "Ram",
+      "firstname": "Ram",
+      "dob": "2021-08-14",
       "id": 1
     },
     {
-      "name": "Ram",
+      "firstname": "Ram",
+      "dob": "",
       "id": 2
     },
     {
-      "name": "Ramesh",
+      "firstname": "Ram",
+      "dob": "",
       "id": 3
     },
     {
-      "name": "Ramesh",
+      "firstname": "Ram",
+      "dob": "",
       "id": 4
     },
     {
-      "name": "pariwesh",
+      "firstname": "Ram",
+      "dob": "",
       "id": 5
     },
     {
-      "name": "Ram",
+      "firstname": "Ram",
+      "dob": "",
       "id": 6
-    },
-    {
-      "name": "Ram",
-      "id": 7
-    },
-    {
-      "name": "Ram",
-      "id": 8
-    },
-    {
-      "name": "Ram",
-      "id": 9
-    },
-    {
-      "name": "Ram",
-      "id": 10
-    },
-    {
-      "name": "Ram",
-      "id": 11
-    },
-    {
-      "name": "Ram",
-      "id": 12
-    },
-    {
-      "name": "Ram",
-      "id": 13
-    },
-    {
-      "name": "Ram",
-      "id": 14
-    },
-    {
-      "name": "Ram",
-      "id": 15
-    },
-    {
-      "name": "Ramesh",
-      "id": 16
-    },
-    {
-      "name": "Ram",
-      "id": 17
-    },
-    {
-      "name": "Ram",
-      "id": 18
-    },
-    {
-      "name": "Ram",
-      "id": 19
     }
   ]
 }

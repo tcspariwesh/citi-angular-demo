@@ -8,13 +8,13 @@ import { AppService } from './app.service';
 })
 export class AppComponent {//public , controller
   title = 'app1';
-  firstname = 'Ram'; //model
+  userform ={firstname: 'Ram', dob:''}; //model
   users:any = [];
   constructor(private appService: AppService) {
 
   }
   handleClick() {
-    this.appService.save(this.firstname,
+    this.appService.save(this.userform,
        (response: any)=> {//success handler
         console.log(response);
         this.users.push(response);
@@ -22,7 +22,6 @@ export class AppComponent {//public , controller
       function (error: any) {//error handler
         alert(error);
       });
-    console.log(this.firstname);
   }
   deleteUser(userId:number, index:number) {
     this.appService.deleteUser(userId,
