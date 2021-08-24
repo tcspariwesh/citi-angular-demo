@@ -4,13 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { AppService } from './app.service';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule, FormsModule
+    BrowserModule, FormsModule,  HttpClientModule
   ],
   providers: [AppService],
   bootstrap: [AppComponent]

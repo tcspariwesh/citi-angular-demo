@@ -6,9 +6,9 @@ import { AppService } from './app.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {//public 
+export class AppComponent {//public , controller
   title = 'app1';
-  firstname = 'Ram';
+  firstname = 'Ram'; //model
 
   constructor(private appService:AppService){
 
