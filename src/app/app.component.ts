@@ -9,15 +9,23 @@ import { AppService } from './app.service';
 export class AppComponent {//public , controller
   title = 'app1';
   firstname = 'Ram'; //model
-
-  constructor(private appService:AppService){
+  users:any = [];
+  constructor(private appService: AppService) {
 
   }
   handleClick() {
-    this.appService.save(this.firstname);
+    this.appService.save(this.firstname,
+       (response: any)=> {//success handler
+        console.log(response);
+        this.users.push(response);
+      },
+      function (error: any) {//error handler
+        alert(error)
+      });
     console.log(this.firstname);
   }
-  delete1() {
+  deleteUser(userId:number) {
+    this.appService.deleteUser(userId);
     console.log('deleted');
   }
 }
