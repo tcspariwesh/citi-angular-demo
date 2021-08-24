@@ -14,7 +14,7 @@ export class AppComponent {//public , controller
 
   }
   handleClick() {
-    this.appService.save();
+    this.appService.save(this.firstname);
     console.log(this.firstname);
   }
   delete1() {
