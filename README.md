@@ -1,5 +1,11 @@
 npm i -g json-server
 
+{
+ "users":[]
+}
+
+json-server db.json
+
 
 
 # App1
